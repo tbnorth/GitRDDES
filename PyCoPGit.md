@@ -1,6 +1,6 @@
-# Version control and R
+# Git(Hub) and Python
 
-http://tbnorth.github.io/git_for_r/
+https://tbnorth.github.io/PyCoPGit/
 
 Terry N. Brown
 
@@ -161,7 +161,7 @@ TerryNBrown@gmail.com
 
 
 
-## Version control and R
+## Version control and Python
 
  - Add and commit received data files, git confirms they
    haven't changed (or tracks changes you choose to make)
@@ -197,67 +197,6 @@ TerryNBrown@gmail.com
 
 (note: most apply to single user coding, you don't need to be
 collaborating to benefit from version control)
-
-
-
-## Cats
-
-[Jeff Hollister's intro.](https://github.com/jhollist/github_101), with cats,
-as a taste of the command line interface for git
-
-
-<img src="jh_cats/exp01.png" height="650px"/>
-
-
-<img src="jh_cats/exp02.png" height="650px"/>
-
-
-<img src="jh_cats/exp03.png" height="650px"/>
-
-
-<img src="jh_cats/exp04.png" height="650px"/>
-
-
-<img src="jh_cats/exp05.png" height="650px"/>
-
-
-<img src="jh_cats/exp06.png" height="650px"/>
-
-
-<img src="jh_cats/exp07.png" height="650px"/>
-
-
-<img src="jh_cats/exp08.png" height="650px"/>
-
-
-<img src="jh_cats/exp09.png" height="650px"/>
-
-
-<img src="jh_cats/exp10.png" height="650px"/>
-
-
-<img src="jh_cats/exp11.png" height="650px"/>
-
-
-<img src="jh_cats/exp12.png" height="650px"/>
-
-
-<img src="jh_cats/exp13.png" height="650px"/>
-
-
-<img src="jh_cats/exp14.png" height="650px"/>
-
-
-<img src="jh_cats/exp15.png" height="650px"/>
-
-
-<img src="jh_cats/exp16.png" height="650px"/>
-
-
-<img src="jh_cats/exp17.png" height="650px"/>
-
-
-<img src="jh_cats/exp18.png" height="650px"/>
 
 
 
@@ -416,18 +355,6 @@ git show 3e2f4a:import/load_data.R  # show load_data.R from commit 3e2f4a
 ![img/ghd00.png](img/ghd00.png)
 
 
-## GitHub Desktop
-
-![img/ghd01.png](img/ghd01.png)
-
-
-
-## Version control and R-Studio
-
-R-Studio has built in support for basic git operations.
-
-
-
 ## Git and binary files
 
  - Just add them, don't worry about it
@@ -436,20 +363,6 @@ R-Studio has built in support for basic git operations.
    files, binary files that change are not git's thing
 
  - For huge binary files, there's the [Git Large File Storage](https://git-lfs.github.com/) extension
-
-
-
-## GitHub, UMN, EPA
-
- - UMN has a GitHub Enterprise deployment, https://github.umn.edu/
-
-   - Unlimited private repositories
-   - Sharing with public harder, can create guest accounts
-
- - EPA has an Organization on the public GitHub site, https://github.com/USEPA
-
-   - Can request private repositories, somewhat limiting
-   - Easy to share with public
 
 
 
@@ -494,10 +407,11 @@ safe_backup
 
 ## Resources
 
- - This presentation http://tbnorth.github.io/git_for_r/
+ - This presentation https://tbnorth.github.io/PyCoPGit/
  - [Git intro.](http://swcarpentry.github.io/git-novice/) from
    [Software Carpentry](http://software-carpentry.org/)
  - [Jeff Hollister's intro.](https://github.com/jhollist/github_101), with cats
  - An [interactive cheat sheet](http://ndpsoftware.com/git-cheatsheet.html)
  - The [git](https://git-scm.com/) and [GitHub](https://github.com/)
    sites
+
