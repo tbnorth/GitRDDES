@@ -2,8 +2,6 @@
 
 https://tbnorth.github.io/PyCoPGit/
 
-Terry N. Brown
-
 TerryNBrown@gmail.com
 
 
@@ -31,7 +29,7 @@ TerryNBrown@gmail.com
    <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Gives you “track changes” collaboration
    for everything (because everything should be a text file ;-)
 
- - Version control, especially git, provides an identity and a way to
+ - Version control, especially git, provides a way to
    recreate the version of code which produced a particular output
 
    <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Reproducible results
@@ -414,4 +412,5 @@ safe_backup
  - An [interactive cheat sheet](http://ndpsoftware.com/git-cheatsheet.html)
  - The [git](https://git-scm.com/) and [GitHub](https://github.com/)
    sites
+
 
