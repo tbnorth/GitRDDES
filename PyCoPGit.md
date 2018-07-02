@@ -108,6 +108,35 @@ TerryNBrown@gmail.com
 
 
 
+# Things that exist
+
+
+## Minimal unit
+
+![user](img/units_00_user.png) <!-- .element height="500" -->
+
+
+## Multiple repos.
+
+![user_repos](img/units_01_user_repos.png) <!-- .element height="500" -->
+
+
+## Repos. without working files
+
+![user_repos_server](img/units_02_user_repos_server.png) <!-- .element height="500" -->
+
+
+## GitHub
+
+![github](img/units_03_github.png) <!-- .element height="500" -->
+
+
+## Multiple users
+
+![users](img/units_04_users.png) <!-- .element height="500" -->
+
+
+
 ## Git terms, nouns
 
  - `repository` - the git files that record all previous versions
@@ -412,5 +441,4 @@ safe_backup
  - An [interactive cheat sheet](http://ndpsoftware.com/git-cheatsheet.html)
  - The [git](https://git-scm.com/) and [GitHub](https://github.com/)
    sites
-
 
