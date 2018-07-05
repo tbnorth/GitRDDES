@@ -83,9 +83,9 @@ TerryNBrown@gmail.com
  - records the changes (or absence of change) for files between
    commits
 
- - git also uses “hashes” as it filing system and unit of identity
+ - git also uses “hashes” (digital fingerprints) as a filing system
 
- - hashes (or digital fingerprints) give git extra features in terms
+ - hashes give git extra features in terms
    of verifiable or non-revisable data analysis processes
 
  - modern VC systems snapshot the state of all the files in a project,
@@ -108,10 +108,7 @@ TerryNBrown@gmail.com
 
 
 
-# Things that exist
-
-
-## Minimal unit
+# Minimal unit
 
 ![user](img/units_00_user.png) <!-- .element height="500" -->
 
@@ -163,6 +160,15 @@ TerryNBrown@gmail.com
  - `fork` - a copy of a repository on GitHub, for “unilateral” collaboration
 
 
+## Git command line
+
+```md
+git <command> <arguments for command>
+```
+
+Most of these “verbs” are git commands.
+
+
 ## Git terms, verbs
 
  - `init` - create a new empty repository
@@ -177,7 +183,9 @@ TerryNBrown@gmail.com
 
 ## Git terms, verbs
 
- - `status` - show current status
+ - `status` - show current status (list changed files)
+
+ - `diff` - show changes line by line
 
  - `log` - show log of commits
 
@@ -188,7 +196,7 @@ TerryNBrown@gmail.com
 
 
 
-## Version control and Python
+## Version control and Data Science
 
  - Add and commit received data files, git confirms they
    haven't changed (or tracks changes you choose to make)
@@ -196,11 +204,14 @@ TerryNBrown@gmail.com
  - Add and commit outputs, git lets you know when they
    change, and when they don't
 
-   - e.g. your code's finally working, and you want to
-     delete all the junk that wasn't part of the solution.
 
-     As well as letting you undo deletions if you need to, git can
-     confirm that the new code produces the same results
+## Version control and Data Science
+
+ - e.g. your code's finally working, and you want to
+   delete all the junk that wasn't part of the solution.
+
+   As well as letting you undo deletions if you need to, git can
+   confirm that the new code produces the same results
 
    <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> git catches unintended changes
 
@@ -222,8 +233,11 @@ TerryNBrown@gmail.com
 
    - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> git catches unintended changes
 
-(note: most apply to single user coding, you don't need to be
-collaborating to benefit from version control)
+
+## Advantages
+
+Most apply to single user coding, you don't need to be
+collaborating to benefit from version control.
 
 
 
@@ -231,9 +245,7 @@ collaborating to benefit from version control)
 
  - You can install basic git for Windows from https://git-scm.com/
 
- - or GitHub Desktop from https://desktop.github.com/
-
-   - GitHub Desktop is a superset of basic git
+ - or GitHub's desktop GUI from https://desktop.github.com/
 
  - Both install a git command line environment called `Git Bash` which
    includes a number of other useful command line utilities as a side
@@ -302,17 +314,24 @@ git config --global core.editor notepad
 
 How do you get back to a previous version?
 
- - GitHub Desktop or R-Studio's interface or gitk will show you
+ - GitHub Desktop or gitk will show you
    changes over time, useful for recovering small snippets
 
  - `git checkout path/to/file` will replace existing file with
    version in last commit
 
- - `git show <revision>:path/to/file` is handy, it just prints the
-    file, which you can direct into a new file if you want:
+
+## Going backwards
+
+ - `git show <revision>:path/to/file`<br/>prints the
+    file, you could re-direct to a new file:
+
 ```sh
-git show HEAD~4:import/load_data.R  # show load_data.R from 4 commits ago
-git show 3e2f4a:import/load_data.R  # show load_data.R from commit 3e2f4a
+# show load_data.py from 4 commits ago
+git show HEAD~4:import/load_data.py
+
+# show load_data.py from commit 3e2f4a
+git show 3e2f4a:import/load_data.py
 ```
 
 
@@ -320,13 +339,15 @@ git show 3e2f4a:import/load_data.R  # show load_data.R from commit 3e2f4a
 
  - `git reset` winds back the whole project
 
-   - `git reset --soft` as if the last `git commit` never happened -
+   - `git reset --soft` as if the last commit never happened -
      just changes the commit considered “latest” in repo.
 
-   - `git reset --mixed` as if the last `git add / commit ` never happened -
+   - `git reset --mixed` as if the last add / commit never happened -
      default, as above plus resets index (staging area) to match repo.
 
-   - `git reset --hard` as if the last `git add / commit ` never happened -
+
+## Going backwards
+   - `git reset --hard` as if the last git add / commit never happened -
      overwrites changed working files to make them match repo.
 
   - be careful with `--hard`, it can delete content
@@ -361,6 +382,18 @@ git show 3e2f4a:import/load_data.R  # show load_data.R from commit 3e2f4a
   to GitHub.
 
 
+## GitHub *Enhanced* Collaboration
+
+- “Forking” a repository is a GitHub, not git, feature
+
+- Allows unilateral collaboration by creating your own copy of the repo.
+
+- “Pull requests” are also a GitHub, not git, feature
+
+- Formal process for asking original repo. owner to merge changes
+  from your fork (copy) of the repo.
+
+
 
 ## Tools
 
@@ -368,13 +401,11 @@ git show 3e2f4a:import/load_data.R  # show load_data.R from commit 3e2f4a
 
    - plain git and GitHub Desktop install “Git Bash” in Windows
 
- - GitHub Desktop
+ - GitHub's desktop GUI
 
  - gitk, for visualizing changes over time, launch from command line
 
  - Meld, http://meldmerge.org/, useful for comparing versions
-
- - R-Studio has git support
 
 
 ## GitHub Desktop
@@ -411,7 +442,7 @@ git bisect good  # tell git it's working here too
 git bisect bad  # tell git it's broken here
 ```
 
-Very quickly isolate a problem introduced at an unknown time
+Quickly isolate a bug introduced at an unknown time
 
 
 ## .gitignore
@@ -424,11 +455,11 @@ Very quickly isolate a problem introduced at an unknown time
 
 ```text
 safe_backup
-*.Rdata
+*.pyc
 # text following '#' are comments
 ```
 
-  Would ignore all .Rdata files and stop reporting the folder `safe_backup` in `git status`
+  Would ignore all `.pyc` files and stop reporting the folder `safe_backup` in `git status`
 
 
 
