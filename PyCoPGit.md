@@ -462,6 +462,19 @@ safe_backup
   Would ignore all `.pyc` files and stop reporting the folder `safe_backup` in `git status`
 
 
+## Use more than one
+
+- mixing a particular data set / set of config. files
+  with source code (.py files) can be messy when you
+  want to release the software.
+
+- keep your source code in one repository, and your
+  project specific data / config. in another
+
+- keeping a demo / test data set in the source code
+  repo. is fine
+
+
 
 ## Resources
 
