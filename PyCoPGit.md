@@ -6,6 +6,42 @@ TerryNBrown@gmail.com
 
 
 
+## How Version Control works
+
+ - records the changes (or absence of change) for files between
+   commits
+
+ - git also uses “hashes” (digital fingerprints) as a filing system
+
+ - hashes give git extra features in terms
+   of verifiable or non-revisable data analysis processes
+
+ - modern VC systems snapshot the state of all the files in a project,
+   not just individual files (vs. older systems like RCS)
+
+
+
+## Version control and Data Science
+
+ - Add and commit received data files, git confirms they
+   haven't changed (or tracks changes you choose to make)
+
+ - Add and commit outputs, git lets you know when they
+   change, and when they don't
+
+
+## Version control and Data Science
+
+ - e.g. your code's finally working, and you want to
+   delete all the junk that wasn't part of the solution.
+
+   As well as letting you undo deletions if you need to, git can
+   confirm that the new code produces the same results
+
+   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> git catches unintended changes
+
+
+
 ## Version Control
 
  - You create `commits` (or snapshots, or versions) of all the
@@ -27,10 +63,10 @@ TerryNBrown@gmail.com
    changes to the same file by different authors
 
    <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Gives you “track changes” collaboration
-   for everything (because everything should be a text file ;-)
+   for everything (everything should be a text file ;-)
 
  - Version control, especially git, provides a way to
-   recreate the version of code which produced a particular output
+   recreate the version of code *and inputs* which produced a particular output
 
    <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Reproducible results
 
@@ -78,33 +114,27 @@ TerryNBrown@gmail.com
 
 
 
-## How Version Control works
+## Advantages
 
- - records the changes (or absence of change) for files between
-   commits
+   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> *zero* concern about changing code
 
- - git also uses “hashes” (digital fingerprints) as a filing system
+   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> back to a working version, or see what changed
 
- - hashes give git extra features in terms
-   of verifiable or non-revisable data analysis processes
+   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Gives you “track changes” collaboration
 
- - modern VC systems snapshot the state of all the files in a project,
-   not just individual files (vs. older systems like RCS)
+   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Reproducible results
+
+   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Backup and mobility as a side effect
+
+   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Learning git has wide spread uses
+
+   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> git catches unintended changes
 
 
+## Advantages
 
-## git, GitHub, <br/>GitHub Desktop
-
- - `git` is a command line program for version control, originally
-   developed by Linus Torvalds.  There are others (bazaar (bzr),
-   subversion (svn), cvs, rcs, etc.)
-
- - `GitHub` is a company that hosts git repositories on-line with
-   value added features (issue tracking, web hosting, enhanced
-   collaboration)
-
- - `GitHub Desktop` is a desktop application (i.e. user interface)
-   for git (from the GitHub company)
+Most apply to single user coding, you don't need to be
+collaborating to benefit from version control.
 
 
 
@@ -131,6 +161,21 @@ TerryNBrown@gmail.com
 ## Multiple users
 
 ![users](img/units_04_users.png) <!-- .element height="500" -->
+
+
+
+## git, GitHub, <br/>GitHub Desktop
+
+ - `git` is a command line program for version control, originally
+   developed by Linus Torvalds.  There are others (bazaar (bzr),
+   subversion (svn), cvs, rcs, etc.)
+
+ - `GitHub` is a company that hosts git repositories on-line with
+   value added features (issue tracking, web hosting, enhanced
+   collaboration)
+
+ - `GitHub Desktop` is a desktop application (i.e. user interface)
+   for git (from the GitHub company)
 
 
 
@@ -174,7 +219,7 @@ Most of these “verbs” are git commands.
  - `init` - create a new empty repository
 
  - `clone` - making a copy of repository, from local file system
-   or remote location via web
+   or remote location via internet
 
  - `push` - send changes (commits) from this repository to another
 
@@ -193,51 +238,6 @@ Most of these “verbs” are git commands.
    a particular commit or branch
 
  - commit, branch, fork - the process of creating one of these things
-
-
-
-## Version control and Data Science
-
- - Add and commit received data files, git confirms they
-   haven't changed (or tracks changes you choose to make)
-
- - Add and commit outputs, git lets you know when they
-   change, and when they don't
-
-
-## Version control and Data Science
-
- - e.g. your code's finally working, and you want to
-   delete all the junk that wasn't part of the solution.
-
-   As well as letting you undo deletions if you need to, git can
-   confirm that the new code produces the same results
-
-   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> git catches unintended changes
-
-
-
-## Advantages
-
-   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> *zero* concern about changing code
-
-   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> back to a working version, or see what changed
-
-   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Gives you “track changes” collaboration
-
-   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Reproducible results
-
-   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Backup and mobility as a side effect
-
-   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Learning git has wide spread uses
-
-   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> git catches unintended changes
-
-
-## Advantages
-
-Most apply to single user coding, you don't need to be
-collaborating to benefit from version control.
 
 
 
@@ -451,7 +451,7 @@ Quickly isolate a bug introduced at an unknown time
    `git add` it when you first create it and when you modify it.
    It gets included in commits, etc. etc.
 
- - Files listed in .gitingore are ignored by git, e.g:
+ - Files listed in .gitignore are ignored by git, e.g:
 
 ```text
 safe_backup
