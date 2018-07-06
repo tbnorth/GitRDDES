@@ -33,7 +33,7 @@ TerryNBrown@gmail.com
 ## Version control and Data Science
 
  - e.g. your code's finally working, and you want to
-   delete all the junk that wasn't part of the solution.
+   delete all the junk that wasn't part of the solution
 
    As well as letting you undo deletions if you need to, git can
    confirm that the new code produces the same results
@@ -134,7 +134,7 @@ TerryNBrown@gmail.com
 ## Advantages
 
 Most apply to single user coding, you don't need to be
-collaborating to benefit from version control.
+collaborating to benefit from version control
 
 
 
@@ -211,7 +211,7 @@ collaborating to benefit from version control.
 git <command> <arguments for command>
 ```
 
-Most of these “verbs” are git commands.
+Most of these “verbs” are git commands
 
 
 ## Git terms, verbs
@@ -274,7 +274,7 @@ git config --global core.editor notepad
 
  - save .csv
 
- - write .R code
+ - write .py code
 
  - git init / status
 
@@ -379,7 +379,7 @@ git show 3e2f4a:import/load_data.py
   pieces GitHub suggests (README.md, License etc.)
 
 - Follow GitHub's instructions to push your existing repo.
-  to GitHub.
+  to GitHub
 
 
 ## GitHub *Enhanced* Collaboration
@@ -466,7 +466,7 @@ safe_backup
 
 - mixing a particular data set / set of config. files
   with source code (.py files) can be messy when you
-  want to release the software.
+  want to release the software
 
 - keep your source code in one repository, and your
   project specific data / config. in another
