@@ -2,7 +2,7 @@
 
 https://tbnorth.github.io/PyCoPGit/
 
-TerryNBrown@gmail.com
+Brown.TerryN@epa.gov
 
 
 
