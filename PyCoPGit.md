@@ -1,6 +1,6 @@
-# Git(Hub) and Python
+# Git(Hub) and<br/>data science
 
-https://tbnorth.github.io/PyCoPGit/
+https://tbnorth.github.io/GitRDDES/
 
 Brown.TerryN@epa.gov
 
@@ -53,8 +53,7 @@ Brown.TerryN@epa.gov
  - You can revert to any previous commit, or compare the current
    files with previous commits to see differences
 
-   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> get back to a working version, or see what
-   changed
+   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> get back to a working version, or see what changed
 
 
 ## Version Control cont.
@@ -86,8 +85,8 @@ Brown.TerryN@epa.gov
 
 ## Version control with `git`
 
- - `git` got all the users, there's nothing else it
-   would make sense to learn
+ - Why git?  Dominant product, others (mercurial, fossil, etc.)
+   less likely to be encountered
 
  - People use git and GitHub for all sorts of things, for example
    as a way of installing R packages
@@ -167,8 +166,8 @@ collaborating to benefit from version control
 ## git, GitHub, <br/>GitHub Desktop
 
  - `git` is a command line program for version control, originally
-   developed by Linus Torvalds.  There are others (bazaar (bzr),
-   subversion (svn), cvs, rcs, etc.)
+   by Linus Torvalds.  Lots of others (mercurial, fossil, bazaar (bzr),
+   svn, cvs, rcs, etc.)
 
  - `GitHub` is a company that hosts git repositories on-line with
    value added features (issue tracking, web hosting, enhanced
@@ -315,6 +314,24 @@ git config --global core.editor notepad
 
 
 
+## Tools
+
+ - git, the command line tool
+
+   - plain git and GitHub Desktop install “Git Bash” in Windows
+
+ - GitHub's desktop GUI
+
+ - gitk, for visualizing changes over time, launch from command line
+
+ - Meld, http://meldmerge.org/, useful for comparing versions
+
+
+## gitk --all
+
+![img/gitk.png](img/gitk.png)
+
+
 ## Going backwards
 
 How do you get back to a previous version?
@@ -332,11 +349,11 @@ How do you get back to a previous version?
     file, you could re-direct to a new file:
 
 ```sh
-# show load_data.py from 4 commits ago
-git show HEAD~4:import/load_data.py
+# show load_data.R from 4 commits ago
+git show HEAD~4:import/load_data.R
 
-# show load_data.py from commit 3e2f4a
-git show 3e2f4a:import/load_data.py
+# show load_data.R from commit 3e2f4a
+git show 3e2f4a:import/load_data.R
 ```
 
 
@@ -400,24 +417,6 @@ git show 3e2f4a:import/load_data.py
 
 
 
-## Tools
-
- - git, the command line tool
-
-   - plain git and GitHub Desktop install “Git Bash” in Windows
-
- - GitHub's desktop GUI
-
- - gitk, for visualizing changes over time, launch from command line
-
- - Meld, http://meldmerge.org/, useful for comparing versions
-
-
-## GitHub Desktop
-
-![img/ghd00.png](img/ghd00.png)
-
-
 ## Git and binary files
 
  - Just add them, don't worry about it
@@ -460,17 +459,17 @@ Quickly isolate a bug introduced at an unknown time
 
 ```text
 safe_backup
-*.pyc
-# text following '#' are comments
+*.Rdata
+# text following '#' is a comment
 ```
 
-  Would ignore all `.pyc` files and stop reporting the folder `safe_backup` in `git status`
+  Would ignore all `.Rdata` files and stop reporting the folder `safe_backup` in `git status`
 
 
 ## Use more than one
 
 - mixing a particular data set / set of config. files
-  with source code (.py files) can be messy when you
+  with source code (.R files) can be messy when you
   want to release the software
 
 - keep your source code in one repository, and your
@@ -483,11 +482,12 @@ safe_backup
 
 ## Resources
 
- - This presentation https://tbnorth.github.io/PyCoPGit/
+ - This presentation https://tbnorth.github.io/GitRDDES/
  - [Git intro.](http://swcarpentry.github.io/git-novice/) from
    [Software Carpentry](http://software-carpentry.org/)
  - [Jeff Hollister's intro.](https://github.com/jhollist/github_101), with cats
  - An [interactive cheat sheet](http://ndpsoftware.com/git-cheatsheet.html)
  - The [git](https://git-scm.com/) and [GitHub](https://github.com/)
    sites
+
 
