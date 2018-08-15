@@ -482,7 +482,7 @@ safe_backup
 ## Sort CSV files
 
  - Git can highlight isolated changes in CSV and similar
-   text format *if* they're written with records in consistent
+   text formats *if* they're written with records in consistent
    order (rows and columns) with consistent decimal places etc.
 
 
