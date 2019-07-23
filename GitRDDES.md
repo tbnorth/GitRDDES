@@ -5,7 +5,6 @@ https://tbnorth.github.io/GitRDDES/
 Brown.TerryN@epa.gov
 
 
-
 ## How Version Control works
 
  - records the changes (or absence of change) for files between
@@ -18,7 +17,6 @@ Brown.TerryN@epa.gov
 
  - modern VC systems snapshot the state of all the files in a project,
    not just individual files (vs. older systems like RCS)
-
 
 
 ## Version control and Data Science
@@ -39,7 +37,6 @@ Brown.TerryN@epa.gov
    confirm that the new code produces the same results
 
    <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> git catches unintended changes
-
 
 
 ## Version Control
@@ -83,7 +80,8 @@ Brown.TerryN@epa.gov
    <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Backup and mobility as a side effect
 
 
-## Version control with `git`
+
+# Version control with `git`
 
  - Why git?  Dominant product, others (mercurial, fossil, etc.)
    less likely to be encountered
@@ -112,7 +110,6 @@ Brown.TerryN@epa.gov
    code” bonus?
 
 
-
 ## Advantages
 
    - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> *zero* concern about changing code
@@ -132,38 +129,38 @@ Brown.TerryN@epa.gov
 
 ## Advantages
 
-Most apply to single user coding, you don't need to be
+Most apply to single user coding / data-analysis, you don't need to be
 collaborating to benefit from version control
 
 
 
 # Minimal unit
 
-![user](img/units_00_user.png) <!-- .element height="500" -->
+![user](img/units_00_user_i.png) <!-- .element height="500" -->
 
 
 ## Multiple repos.
 
-![user_repos](img/units_01_user_repos.png) <!-- .element height="500" -->
+![user_repos](img/units_01_user_repos_i.png) <!-- .element height="500" -->
 
 
 ## Repos. without working files
 
-![user_repos_server](img/units_02_user_repos_server.png) <!-- .element height="500" -->
+![user_repos_server](img/units_02_user_repos_server_i.png) <!-- .element height="500" -->
 
 
 ## GitHub
 
-![github](img/units_03_github.png) <!-- .element height="500" -->
+![github](img/units_03_github_i.png) <!-- .element height="500" -->
 
 
 ## Multiple users
 
-![users](img/units_04_users.png) <!-- .element height="500" -->
+![users](img/units_04_users_i.png) <!-- .element height="500" -->
 
 
 
-## git, GitHub, <br/>GitHub Desktop
+# git, GitHub, <br/>GitHub Desktop
 
  - `git` is a command line program for version control, originally
    by Linus Torvalds.  Lots of others (mercurial, fossil, bazaar (bzr),
@@ -175,7 +172,6 @@ collaborating to benefit from version control
 
  - `GitHub Desktop` is a desktop application (i.e. user interface)
    for git (from the GitHub company)
-
 
 
 ## Git terms, nouns
@@ -194,14 +190,23 @@ collaborating to benefit from version control
 
 ## Git terms, nouns
 
- - `tag` - an arbitrary name associated with a particular commit, e.g.
-   “v0.2.1” or “to-JGRL-20160312”
-
  - `branch` - a distinct series of commits used to isolate development
    of a particular feature from the main code, or perhaps to isolate
    incoming non-QA'ed data from the main, QA'ed set of data
 
  - `fork` - a copy of a repository on GitHub, for “unilateral” collaboration
+
+
+## Git terms, nouns
+
+ - `tag` - an arbitrary name associated with a particular commit, e.g.
+   “v0.2.1” or “to-JGRL-20160312”
+
+ - (commit) `hash` - the hexadecimal string which uniquely identifies a
+   commit, e.g. `1dc962056efb80908f1c8fd3e5a4298ca301af46` but often
+   abbreviated to the first seven digits, `1dc9620`.
+
+Every `commit` has a `hash`, only commits you explicitly `tag` have tags.
 
 
 ## Git command line
@@ -240,7 +245,7 @@ Most of these “verbs” are git commands
 
 
 
-## Installation
+# Installation
 
  - You can install basic git for Windows from https://git-scm.com/
 
@@ -251,7 +256,6 @@ Most of these “verbs” are git commands
    effect
 
 
-
 ## A simple demo
 
 
@@ -259,7 +263,7 @@ Most of these “verbs” are git commands
 
 ```
 git config --global user.name "Terry N. Brown"
-git config --global user.email "terry_n_brown@yahoo.com"
+git config --global user.email "Brown.TerryN@epa.gov"
 git config --global core.editor notepad
 ```
 
@@ -314,7 +318,7 @@ git config --global core.editor notepad
 
 
 
-## Tools
+# Tools
 
  - git, the command line tool
 
@@ -332,7 +336,8 @@ git config --global core.editor notepad
 ![img/gitk.png](img/gitk.png)
 
 
-## Going backwards
+
+# Going backwards
 
 How do you get back to a previous version?
 
@@ -379,7 +384,7 @@ git show 3e2f4a:import/load_data.R
 
 
 
-## Collaboration
+# Collaboration
 
  - You can collaborate “in-house” with three (or more) copies of a
    repository
@@ -416,7 +421,6 @@ git show 3e2f4a:import/load_data.R
   from your fork (copy) of the repo.
 
 
-
 ## Git and binary files
 
  - Just add them, don't worry about it
@@ -428,7 +432,7 @@ git show 3e2f4a:import/load_data.R
 
 
 
-## Other tricks
+# Other tricks
 
  - `git bisect`, for projects with dozens or thousands of commits, use a
    bisection search for the commit which broke feature X
@@ -463,7 +467,7 @@ safe_backup
 # text following '#' is a comment
 ```
 
-  Would ignore all `.Rdata` files and stop reporting the folder `safe_backup` in `git status`
+Would ignore all `.Rdata` files and stop reporting the folder `safe_backup` in `git status`
 
 
 ## Use more than one
@@ -486,7 +490,6 @@ safe_backup
    order (rows and columns) with consistent decimal places etc.
 
 
-
 ## Resources
 
  - This presentation https://tbnorth.github.io/GitRDDES/
@@ -496,5 +499,4 @@ safe_backup
  - An [interactive cheat sheet](http://ndpsoftware.com/git-cheatsheet.html)
  - The [git](https://git-scm.com/) and [GitHub](https://github.com/)
    sites
-
 
