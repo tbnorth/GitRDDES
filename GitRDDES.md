@@ -36,7 +36,7 @@ Brown.TerryN@epa.gov
    As well as letting you undo deletions if you need to, git can
    confirm that the new code produces the same results
 
-   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> git catches unintended changes
+   ⭐git catches unintended changes
 
 
 ## Version Control
@@ -44,13 +44,13 @@ Brown.TerryN@epa.gov
  - You create `commits` (or snapshots, or versions) of all the
    components of a project at a point in time
 
-   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> *zero* concern about changing
+   ⭐ *zero* concern about changing
    code, you can always get back to this point
 
  - You can revert to any previous commit, or compare the current
    files with previous commits to see differences
 
-   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> get back to a working version, or see what changed
+   ⭐ get back to a working version, or see what changed
 
 
 ## Version Control cont.
@@ -58,13 +58,13 @@ Brown.TerryN@epa.gov
  - Version control tools can (usually) automatically merge
    changes to the same file by different authors
 
-   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Gives you “track changes” collaboration
+   ⭐ Gives you “track changes” collaboration
    for everything (everything should be a text file ;-)
 
  - Version control, especially git, provides a way to
    recreate the version of code *and inputs* which produced a particular output
 
-   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Reproducible results
+   ⭐ Reproducible results
 
 
 ## Version Control cont.
@@ -77,7 +77,7 @@ Brown.TerryN@epa.gov
 
    - Code mobility (work in the office and at home etc.)
 
-   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Backup and mobility as a side effect
+   ⭐ Backup and mobility as a side effect
 
 
 
@@ -92,7 +92,7 @@ Brown.TerryN@epa.gov
  - GitHub has lots of added benefits, issue tracking, task management,
    free hosting (for public work)
 
-   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Learning git has wide spread uses
+   ⭐ Learning git has wide spread uses
 
 
 ## Manual version control
@@ -106,25 +106,25 @@ Brown.TerryN@epa.gov
 
  - Including current outputs?
 
- - Will it be so easy you retain the “<Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> zero concern about changing
+ - Will it be so easy you retain the “⭐ zero concern about changing
    code” bonus?
 
 
 ## Advantages
 
-   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> *zero* concern about changing code
+   - ⭐ *zero* concern about changing code
 
-   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> back to a working version, or see what changed
+   - ⭐ back to a working version, or see what changed
 
-   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Gives you “track changes” collaboration
+   - ⭐ Gives you “track changes” collaboration
 
-   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Reproducible results
+   - ⭐ Reproducible results
 
-   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Backup and mobility as a side effect
+   - ⭐ Backup and mobility as a side effect
 
-   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Learning git has wide spread uses
+   - ⭐ Learning git has wide spread uses
 
-   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> git catches unintended changes
+   - ⭐ git catches unintended changes
 
 
 ## Advantages
