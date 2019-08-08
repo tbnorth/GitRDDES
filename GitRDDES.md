@@ -1,6 +1,6 @@
 # Git(Hub) and<br/>data science
 
-https://tbnorth.github.io/GitRDDES/
+https://github.com/USEPA/epa_r_workshop_2019/pres
 
 Brown.TerryN@epa.gov
 
@@ -202,9 +202,11 @@ collaborating to benefit from version control
  - `tag` - an arbitrary name associated with a particular commit, e.g.
    “v0.2.1” or “to-JGRL-20160312”
 
- - (commit) `hash` - the hexadecimal string which uniquely identifies a
+ - (commit) `hash` - the hexadecimal string which  
+   uniquely identifies a
    commit, e.g. `1dc962056efb80908f1c8fd3e5a4298ca301af46` but often
-   abbreviated to the first seven digits, `1dc9620`.
+   abbreviated to the first seven digits,  
+   `1dc9620`.
 
 Every `commit` has a `hash`, only commits you explicitly `tag` have tags.
 
@@ -492,7 +494,7 @@ Would ignore all `.Rdata` files and stop reporting the folder `safe_backup` in `
 
 ## Resources
 
- - This presentation https://tbnorth.github.io/GitRDDES/
+ - This presentation https://github.com/USEPA/epa_r_workshop_2019/pres
  - [Git intro.](http://swcarpentry.github.io/git-novice/) from
    [Software Carpentry](http://software-carpentry.org/)
  - [Jeff Hollister's intro.](https://github.com/jhollist/github_101), with cats
